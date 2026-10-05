@@ -1,0 +1,9 @@
+from __future__ import annotations
+
+from django.apps import AppConfig
+
+
+class AccountingConfig(AppConfig):
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "accounting"
+    verbose_name = "Comptabilité (socle partie double bi-monnaie)"

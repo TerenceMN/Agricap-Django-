@@ -1,0 +1,13 @@
+{
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.12",
+  "typeCheckingMode": "basic",
+  "exclude": [
+    "**/migrations/**",
+    "**/__pycache__/**",
+    "**/staticfiles/**",
+    "**/media/**"
+  ],
+  "reportMissingModuleSource": "none"
+}

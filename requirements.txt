@@ -1,0 +1,14 @@
+Django>=5.0,<6.0
+djangorestframework>=3.15
+# PostgreSQL (production) — cf. config/settings.py DATABASES
+psycopg2-binary>=2.9
+django-cors-headers>=4.4
+openpyxl>=3.1
+python-docx>=1.1
+requests>=2.31
+# Signature RSA des requêtes vers la plateforme de paiement Makuta
+# (common/makuta.py). Sans elle, aucun paiement ne peut être authentifié.
+cryptography>=42
+# Schéma OpenAPI + Swagger UI (/api/docs/). Le schéma porte, sur chaque
+# opération, le couplage mesuré avec les frontends (common/openapi.py).
+drf-spectacular>=0.27

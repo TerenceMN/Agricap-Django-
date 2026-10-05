@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page introuvable — AGRICAP</title>
+<style>
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg,#e6f2eb,#f5f8f6); font-family:Segoe UI,system-ui,sans-serif; }
+  .card { max-width:420px; width:90%; background:#fff; padding:2.5rem; border-radius:16px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12); text-align:center; }
+  img { max-width:220px; width:100%; margin-bottom:18px; }
+  h1 { color:#111827; font-size:22px; margin:0 0 8px; }
+  p { color:#6b7280; font-size:14px; margin:4px 0; }
+  a { color:#1f7a3d; font-weight:700; text-decoration:underline; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img src="/static/agricap-logo.png" alt="AGRICAP">
+    <h1>Page introuvable</h1>
+    <p>Cette adresse ne correspond à rien chez AGRICAP.</p>
+    <p>Redirection en cours… <a href="/">continuer sans attendre</a></p>
+  </div>
+  <script>
+    // "/" décide déjà lui-même session active -> accueil, sinon -> connexion.
+    setTimeout(function () { window.location.replace("/"); }, 2500);
+  </script>
+</body>
+</html>
